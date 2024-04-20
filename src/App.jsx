@@ -6,12 +6,12 @@ import Knight from "./components/Knight";
 import Square from "./components/Square";
 import Board from "./components/Board";
 
-function App() {
+function App({ knightPosition }) {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Board knightPosition={[7, 0] } />
+      <Board knightPosition={knightPosition} />
     </>
   );
 }
